@@ -71,6 +71,18 @@ const Header = () => {
             >
               FAQ
             </a>
+            <a 
+              href="/blog"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
+            >
+              Blog
+            </a>
+            <a 
+              href="/depoimentos"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
+            >
+              Depoimentos
+            </a>
             <button 
               onClick={() => scrollToSection('contato')}
               className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
@@ -138,6 +150,18 @@ const Header = () => {
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
               >
                 FAQ
+              </a>
+              <a 
+                href="/blog"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Blog
+              </a>
+              <a 
+                href="/depoimentos"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Depoimentos
               </a>
               <button 
                 onClick={() => scrollToSection('contato')}

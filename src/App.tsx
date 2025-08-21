@@ -10,6 +10,12 @@ import Professores from "./pages/Professores";
 import FAQ from "./pages/FAQ";
 import Projetos from "./pages/Projetos";
 import Politicas from "./pages/Politicas";
+import GaleriaTurmas from "./pages/GaleriaTurmas";
+import GaleriaEventos from "./pages/GaleriaEventos";
+import PortalPais from "./pages/PortalPais";
+import Depoimentos from "./pages/Depoimentos";
+import CalendarioEscolar from "./pages/CalendarioEscolar";
+import NoticiasBlog from "./pages/NoticiasBlog";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +32,12 @@ const App = () => (
             <Route path="/faq" element={<FAQ />} />
             <Route path="/projetos" element={<Projetos />} />
             <Route path="/politicas" element={<Politicas />} />
+            <Route path="/galeria-turmas" element={<GaleriaTurmas />} />
+            <Route path="/galeria-eventos" element={<GaleriaEventos />} />
+            <Route path="/portal-pais" element={<PortalPais />} />
+            <Route path="/depoimentos" element={<Depoimentos />} />
+            <Route path="/calendario" element={<CalendarioEscolar />} />
+            <Route path="/blog" element={<NoticiasBlog />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
