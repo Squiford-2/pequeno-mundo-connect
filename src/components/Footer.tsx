@@ -41,28 +41,28 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('servicos')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
+                <a 
+                  href="/professores"
+                  className="hover:text-white transition-colors block"
                 >
-                  Serviços
-                </button>
+                  Professores
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('galeria')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
+                <a 
+                  href="/projetos"
+                  className="hover:text-white transition-colors block"
                 >
-                  Galeria
-                </button>
+                  Projetos
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="hover:text-white transition-colors"
+                <a 
+                  href="/faq"
+                  className="hover:text-white transition-colors block"
                 >
-                  Contato
-                </button>
+                  FAQ
+                </a>
               </li>
             </ul>
           </div>
@@ -108,6 +108,10 @@ const Footer = () => {
             
             <div className="flex flex-col md:flex-row gap-4 text-center">
               <span>&copy; 2024 Escola Pequeno Mundo. Todos os direitos reservados.</span>
+              <span>•</span>
+              <a href="/politicas" className="hover:text-white transition-colors">
+                Políticas e Termos
+              </a>
             </div>
           </div>
         </div>

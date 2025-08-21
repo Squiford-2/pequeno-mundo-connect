@@ -34,34 +34,46 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <button 
               onClick={() => scrollToSection('sobre')}
-              className="text-foreground hover:text-primary transition-colors story-link font-medium"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
             >
               Sobre
             </button>
             <button 
               onClick={() => scrollToSection('servicos')}
-              className="text-foreground hover:text-primary transition-colors story-link font-medium"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('galeria')}
-              className="text-foreground hover:text-primary transition-colors story-link font-medium"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
             >
               Galeria
             </button>
-            <button 
-              onClick={() => scrollToSection('localizacao')}
-              className="text-foreground hover:text-primary transition-colors story-link font-medium"
+            <a 
+              href="/professores"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
             >
-              Localização
-            </button>
+              Professores
+            </a>
+            <a 
+              href="/projetos"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
+            >
+              Projetos
+            </a>
+            <a 
+              href="/faq"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
+            >
+              FAQ
+            </a>
             <button 
               onClick={() => scrollToSection('contato')}
-              className="text-foreground hover:text-primary transition-colors story-link font-medium"
+              className="text-foreground hover:text-primary transition-colors story-link font-medium text-sm"
             >
               Contato
             </button>
@@ -109,12 +121,24 @@ const Header = () => {
               >
                 Galeria
               </button>
-              <button 
-                onClick={() => scrollToSection('localizacao')}
+              <a 
+                href="/professores"
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
               >
-                Localização
-              </button>
+                Professores
+              </a>
+              <a 
+                href="/projetos"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                Projetos
+              </a>
+              <a 
+                href="/faq"
+                className="text-left text-foreground hover:text-primary transition-colors py-2"
+              >
+                FAQ
+              </a>
               <button 
                 onClick={() => scrollToSection('contato')}
                 className="text-left text-foreground hover:text-primary transition-colors py-2"
